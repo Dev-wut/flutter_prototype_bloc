@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 
 import '../../feature/home_page/home_page.dart';
-import '../../feature/split_panel/presentation/page/split_Panel.dart';
+import '../../feature/split_panel/presentation/page/split_panel.dart';
 import '../../feature/split_panel/presentation/page/split_panel_example.dart';
 import '../../feature/split_panel/presentation/page/three_split_panel.dart';
 import '../../feature/split_panel/presentation/page/three_split_panel_example.dart';

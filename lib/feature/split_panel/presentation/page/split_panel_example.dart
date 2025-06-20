@@ -1,7 +1,7 @@
 // split_panel_example.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_prototype_bloc/feature/split_panel/presentation/page/split_Panel.dart';
+import 'package:flutter_prototype_bloc/feature/split_panel/presentation/page/split_panel.dart';
 
 import '../cubit/split_panel_cubit.dart';
 import '../cubit/split_panel_state.dart';
