@@ -223,28 +223,29 @@ class _SplitPanelView extends StatelessWidget {
           child: Stack(
             children: [
               // Main panel layout with animation
-              AnimatedSwitcher(
-                duration: _animationDuration,
-                transitionBuilder: (Widget child, Animation<double> animation) {
-                  return SlideTransition(
-                    position: Tween<Offset>(
-                      begin: const Offset(0.1, 0.0),
-                      end: Offset.zero,
-                    ).animate(CurvedAnimation(
-                      parent: animation,
-                      curve: _animationCurve,
-                    )),
-                    child: FadeTransition(
-                      opacity: animation,
-                      child: child,
-                    ),
-                  );
-                },
-                child: Row(
+              // AnimatedSwitcher(
+              //   duration: _animationDuration,
+                // transitionBuilder: (Widget child, Animation<double> animation) {
+                //   return SlideTransition(
+                //     position: Tween<Offset>(
+                //       begin: const Offset(0.1, 0.0),
+                //       end: Offset.zero,
+                //     ).animate(CurvedAnimation(
+                //       parent: animation,
+                //       curve: _animationCurve,
+                //     )),
+                //     child: FadeTransition(
+                //       opacity: animation,
+                //       child: child,
+                //     ),
+                //   );
+                // },
+                // child:
+                Row(
                   key: ValueKey('${state.isLeftPanelOpen}-${state.isRightPanelOpen}'),
                   children: _buildPanelLayout(state),
                 ),
-              ),
+              // ),
 
               // Toggle buttons
               if (showLeftToggleButton)
