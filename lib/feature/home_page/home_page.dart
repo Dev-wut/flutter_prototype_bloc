@@ -15,6 +15,9 @@ class HomePage extends StatelessWidget {
       AppRoutes.threeSplitPanelExample.name : "ThreeSplitPanel Example",
       AppRoutes.splitPanel.name : "SplitPanel Original",
       AppRoutes.splitPanelExample.name : "SplitPanel Example",
+      AppRoutes.silverAppBarTabStateFull.name : "SilverAppBarTabStateFull",
+      AppRoutes.silverAppBarTab.name : "SilverAppBarTab",
+      // AppRoutes.silverAppBarTabExample.name : "SilverAppBarTab Example",
     };
 
     return Scaffold(
