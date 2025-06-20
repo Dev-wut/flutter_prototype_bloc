@@ -11,10 +11,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final featureList = <String, String>{
-      AppRoutes.threeSplitPanel.name : "threeSplitPanel",
-      AppRoutes.threeSplitPanelExample.name : "ThreeSplitPanelExample",
-      AppRoutes.splitPanel.name : "SplitPanel",
-      AppRoutes.splitPanelExample.name : "SplitPanelExample",
+      AppRoutes.threeSplitPanel.name : "ThreeSplitPanel Original",
+      AppRoutes.threeSplitPanelExample.name : "ThreeSplitPanel Example",
+      AppRoutes.splitPanel.name : "SplitPanel Original",
+      AppRoutes.splitPanelExample.name : "SplitPanel Example",
     };
 
     return Scaffold(
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Text(
-            'Welcome, Flutter Prototype!',
+            'Welcome, Flutter Prototype With Bloc!',
             style: Theme.of(context).textTheme.displayMedium,
           ),
           const SizedBox(height: 20),

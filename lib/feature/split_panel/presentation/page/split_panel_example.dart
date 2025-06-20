@@ -66,7 +66,7 @@ class SplitPanelExample extends StatelessWidget {
           ),
         ),
         rightPanelWidth: 550,
-        showLeftToggleButton: false,
+        showLeftToggleButton: true,
         backgroundColor: Colors.grey.shade100,
         cardColor: Colors.white,
         buttonColor: Colors.white,
