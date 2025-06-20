@@ -97,6 +97,7 @@ class _SplitPanelView extends StatelessWidget {
     required EdgeInsets padding,
     double? width,
     bool isExpanded = false,
+    int flex = 1,
   }) {
     final panel = Container(
       width: width,
@@ -108,8 +109,10 @@ class _SplitPanelView extends StatelessWidget {
         child: content,
       ),
     );
-
-    return isExpanded ? Expanded(child: panel) : panel;
+    return isExpanded ? Expanded(
+      flex: flex,
+      child: panel,
+    ) : panel;
   }
 
   // Optimized: Simplified panel layout logic
@@ -138,12 +141,14 @@ class _SplitPanelView extends StatelessWidget {
           padding: _leftPadding,
           width: state.leftPanelWidth > 0 ? state.leftPanelWidth : null,
           isExpanded: state.leftPanelWidth <= 0,
+          flex: state.leftPanelWidth > 0 ? 1 : 10,
         ),
         _buildPanel(
           content: rightContent,
           padding: _rightPadding,
           width: state.rightPanelWidth > 0 ? state.rightPanelWidth : null,
           isExpanded: state.rightPanelWidth <= 0,
+          flex: state.rightPanelWidth > 0 ? 1 : 6,
         ),
       ];
     }
